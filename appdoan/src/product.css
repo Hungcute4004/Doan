@@ -1,0 +1,342 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;   
+}
+.product
+{
+    padding: 30px 40px;
+    width: 100%;
+}
+.product h2
+{
+    font-size: 42px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #010f1c;
+}
+.product p
+{
+    margin-top: 10px;
+    color: #9a9a9a;
+}
+.product .container
+{
+    margin-top: 20px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.product .container .filter
+{
+    padding: 20px 30px;
+}
+.product .container .filter .categories h3
+{
+    color: #010f1c;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.product .container .filter .categories ul
+{
+    margin-top: 10px;
+}
+.product .container .filter .categories ul li
+{
+    list-style: none;
+    margin-top: 20px;
+    color: #010f1c;
+    cursor: pointer;
+}
+.product .container .productbox
+{
+    margin-right: 10%;
+}
+.product .container .productbox .contact
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product .container .productbox .contact .box
+{
+    padding: 10px 20px;
+    overflow: hidden;
+    width: 280px;
+    height: 380px;
+    border: 1px solid #e2e0e0;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+    object-fit: cover
+}
+.product .container .productbox .contact .box:hover
+{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.product .container .productbox .contact .box .img_box
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px;
+}
+
+.product .container .productbox .contact .box .img_box img
+{
+    width: 300px;
+    height: 250px;
+    margin-right: 50px;
+}
+.product .container .productbox .contact .box .img_box .icon
+{
+    z-index: 1;
+    position: relative;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.product .container .productbox .contact .box:hover .img_box .icon
+{
+    transform: translateX(-100px);
+}
+.product .container .productbox .contact .box .img_box .icon li
+{
+    list-style: none;
+    padding: 10px 10px;
+    color: #010f1c;
+    cursor: pointer;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    background: #fff;
+    transition: 0.5s;
+    font-size: 18px;
+}
+.product .container .productbox .contact .box .img_box .icon li:hover
+{
+    background: #0989ff;
+    color: #fff;
+}
+.product .container .productbox .contact .box .detail
+{
+    margin-top: 10px;
+}
+.product .container .productbox .contact .box .detail h3
+{
+    font-size: 16px;
+    margin-top: 5px;
+    color: #010f1c;
+    transition: 0.5s;
+}
+.product .container .productbox .contact .box:hover .detail h3
+{
+    color: #0989ff;
+}
+.product .container .productbox .contact .box:hover .detail h4
+{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #0989ff;
+    letter-spacing: 1px;
+}
+.product_detail
+{
+    margin-top: 30px;
+    padding: 30px 40px;
+    width: 100%;
+    height: 120%;
+    position: fixed;
+    z-index: 1;
+    margin-top: -15%;
+    background: rgba(0, 0, 0, 0.24);
+}
+.product_detail .container
+{
+    margin-top: 7%;
+    margin-left: 8%;
+    width: 1000px;
+    height: 550px;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24);
+}
+.product_detail .container .closebtn
+{
+    margin-left: 90%;
+    appearance: none;
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292E;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+.product_detail .container .closebtn:hover
+{
+    background-color: #F3F4F6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
+.product_detail .container .closebtn:disabled
+{
+    background-color: #FAFBFC;
+    border-color: rgba(27, 31, 35, 0.15);
+    color: #959DA5;
+    cursor: default;
+}
+.product_detail .container .closebtn:active
+{
+    background-color: #EDEFF2;
+    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+    transition: none 0s;
+}
+.product_detail .container .closebtn:focus
+{
+    outline: 1px transparent;
+}
+.product_detail .container .closebtn::before
+{
+    display: none;
+}
+.product_detail .container .closebtn:-webkit-details-marker
+{
+    display: none;
+}
+.product_detail .container .product_box
+{
+    max-width: 100%;
+    display: flex;
+    padding: 20px 40px;
+    margin-top: 20px;
+}
+.product_detail .container .product_box .img-box
+{
+    padding: 20px 30px;
+    width: 300px;
+    height: 400px;
+    background: #f1f1f1;
+}
+.product_detail .container .product_box .img-box img
+{
+    width: 250px;
+    height: 250px;
+}
+.product_detail .container .product_box .detail
+{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.product_detail .container .product_box .detail h4
+{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 200;
+    color: #9a9a9a;
+    letter-spacing: 1px;
+}
+.product_detail .container .product_box .detail h2
+{
+    margin-top: 30px;
+    font-size: 32px;
+    color: #010f1c;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.product_detail .container .product_box .detail p
+{
+    margin-top: 10px;
+    color: #474848;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+
+
+.product_detail .container .product_box .detail button
+{
+    appearance: none;
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292E;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+.product_detail .container .product_box .detail button:hover
+{
+    background-color: #F3F4F6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
+.product_detail .container .product_box .detail button:disabled
+{
+    background-color: #FAFBFC;
+    border-color: rgba(27, 31, 35, 0.15);
+    color: #959DA5;
+    cursor: default;
+}
+.product_detail .container .product_box .detail button:active
+{
+    background-color: #EDEFF2;
+    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+    transition: none 0s;
+}
+.product_detail .container .product_box .detail button:focus
+{
+    outline: 1px transparent;
+}
+.product_detail .container .product_box .detail button:before
+{
+    display: none;
+}
+.product_detail .container .product_box .detail button:-webkit-details-marker
+{
+    display: none;
+}
+.product_detail .container .product_box .detail h3
+{
+    margin-top: 10px;
+    color: #010f1c;
+    font-size: 32px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
